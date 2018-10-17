@@ -4,7 +4,7 @@
 using namespace std;
 
 //For making the input map links and the input file
-bool writeLinkMapHT(uint16_t peakEta_top[NClustersPerPhi][NCaloLayer2Phi],
+bool writeLinkMapGCT(uint16_t peakEta_top[NClustersPerPhi][NCaloLayer2Phi],
 		 uint16_t peakPhi_top[NClustersPerPhi][NCaloLayer2Phi],
 		 uint16_t towerEta_top[NClustersPerPhi][NCaloLayer2Phi],
 		 uint16_t towerPhi_top[NClustersPerPhi][NCaloLayer2Phi],
@@ -476,7 +476,7 @@ int main ()
 
   //printing link map file
   bool success_link_map = false;
-  success_link_map = writeLinkMapHT(peakEta_top,peakPhi_top,towerEta_top,towerPhi_top,ClusterET_top,peakEta_bot,peakPhi_bot,towerEta_bot,towerPhi_bot,ClusterET_bot,outpeakEta_top,outpeakPhi_top,outtowerEta_top,outtowerPhi_top,outClusterET_top,outpeakEta_bot,outpeakPhi_bot,outtowerEta_bot,outtowerPhi_bot,outClusterET_bot);
+  success_link_map = writeLinkMapGCT(peakEta_top,peakPhi_top,towerEta_top,towerPhi_top,ClusterET_top,peakEta_bot,peakPhi_bot,towerEta_bot,towerPhi_bot,ClusterET_bot,outpeakEta_top,outpeakPhi_top,outtowerEta_top,outtowerPhi_top,outClusterET_top,outpeakEta_bot,outpeakPhi_bot,outtowerEta_bot,outtowerPhi_bot,outClusterET_bot);
 	
 
   if(GCT(peakEta_top,peakPhi_top,towerEta_top,towerPhi_top,ClusterET_top,peakEta_bot,peakPhi_bot,towerEta_bot,towerPhi_bot,ClusterET_bot,outpeakEta_top,outpeakPhi_top,outtowerEta_top,outtowerPhi_top,outClusterET_top,outpeakEta_bot,outpeakPhi_bot,outtowerEta_bot,outtowerPhi_bot,outClusterET_bot))
